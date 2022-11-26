@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color:rgb(204,197,185);
+
+}
+.firsts{
+    background-image: url(./img/backgraund2.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 800px;
+    
+}
+
+.firstp{
+    color: whitesmoke;
+    margin: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    line-height: 74px;
+    height: 75px;
+    text-transform: uppercase;
+    background: rgb(64,61,57);
+    
+}
+
+nav .navbar-brand {
+    
+    color: rgb(235, 233, 233);
+   
+    padding-left: 20px;
+    letter-spacing: .5px;
+    align-items: center;
+
+}
+
+nav .nav-list {
+    display: flex;
+}
+
+nav .nav-list .nav-item {
+    cursor: pointer;
+    height: 100%;
+    padding: 0px 20px ;
+    transition: .4s;
+}
+
+nav .nav-list .nav-item:hover {
+    background: rgb(204,197,185);
+}
+
+nav .nav-list .nav-link {
+    color: rgb(240, 233, 233);
+    font-size: 18px;
+}
+
+h1, h2{
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px;  
+}
+.sluzby{
+    color: black;
+    background-color:rgb(204,197,185);
+    padding: 30px;
+}
+h3{
+    padding: 10px;
+}
+.section2{
+    background-color:rgb(204,197,185);
+    
+    
+}
+.itemcontainer{
+    display: flex;
+    margin: 10px;
+    background-color:rgb(245, 245, 245);
+    box-shadow: 3px 3px 7px rgb(64, 64, 82);
+    min-height: 400px;
+
+}
+
+
+@media (max-width: 767px) {
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #404040;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+        
+    }
+    .nav-link{
+        display: flex;
+    }
+
+    nav .nav-list .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .navbar-toggler.navbar-toggler {
+        display: grid 
+    }
+
+    .itemcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        text-align: center;
+        border: solid 1px black;
+        border-radius: 2%;
+
+    }
+    .itemfoto{
+        width: 30%;
+        min-width: 150px;
+        align-self: center;
+        padding: 10px 0 10px 0 ;
+    }
+    .itemp{
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+.itemfoto{
+    width: 300px;
+    
+
+
+}
+.itemcontainer{
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    text-align: center;
+    border: solid 1px black;
+    border-radius: 2%;
+    box-shadow: 3px 3px 7px rgb(64, 64, 82);
+    
+}
+.itemfoto{
+    width: 30%;
+    min-width: 150px;
+    align-self: center;
+    padding: 10px 0 10px 0 ;
+}
+.itemp{
+    padding: 20px;
+}
+
+
+
+
+
+}
+nav .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px 10px 0 0;
+    cursor: pointer;
+}
+
+nav .navbar-toggler .bar {
+    width: 30px;
+    height: 3px;
+    margin-bottom: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 10%;
+    transition: .4s;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ nav .nav-list {
+    transform: translateY(0);
+    z-index: 1;
+    
+    
+}
+
+input:checked ~ nav .navbar-toggler {
+    margin-top: 35px;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+
+.kontakt{
+    background-color:rgb(245, 245, 245);
+}
+.fotarolo {
+    background-color: rgb(245, 245, 245);
+    border: solid 1px;
+    padding: 10px;
+    width: auto;
+    margin: 10px 10px 0px 10px;
+    box-shadow: 3px 3px 7px rgb(64, 64, 82);
+    border-radius: 5px;
+    
+}
+ 
+
+#name-id, #email-id, #tel-id, #pred-id {
+    width: 70%;
+    padding: 12px 20px;
+    color: black;
+    display: block;
+    margin:15px auto;
+    border: solid 1px;
+    box-shadow: 3px 3px 3px  rgb(143, 143, 156);
+    text-shadow: none;
+    height: 30px;
+
+    
+    
+  }
+  #message-id {
+  width: 70%;
+  padding: 5px 20px;
+  color: black;
+  display: block;
+  margin:15px auto;
+  box-shadow: 3px 3px 3px  rgb(143, 143, 156);
+  text-shadow: none;
+  border: solid 1px;
+  }
+
+    
+    
+    
+
+ .submit {
+   width: 80%;
+   padding: 10px 20px;
+   margin: 30px auto;
+   background-color: rgba(164, 164, 168, 0.733);
+   width: 50%;
+   box-shadow:5px 5px 5px rgb(64, 64, 82);
+   border-radius: 5px;
+   display: block;
+   max-width: 200px;
+   min-width: 100px;
+   cursor: pointer;
+   
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    
+    background-color: rgb(204,197,185);
+    padding-top: 20px;
+}
+
+.mapa{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: 300px;
+    width: auto;
+}
+.elerhetoseg{
+  display: flex;
+  justify-content: center;
+ margin: 20px;
+ gap: 20px;
+  flex-direction: column;
+}
+.kontakt_nas{
+    color: black;
+padding: 25px;
+}
+
+@media screen and (min-width: 999px) {
+
+.section2{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+footer{
+    justify-content: space-around;
+}
+.elerhetoseg{
+    justify-content: center;
+    width: auto;
+    align-content: flex-end;
+}
+
+}

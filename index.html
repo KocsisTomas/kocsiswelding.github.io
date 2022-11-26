@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Kocsis Garaz</title>
+</head>
+<body>
+    <input type="checkbox" id="toggle">
+
+    <nav>
+       
+        <a class="navbar-brand" href="#">
+            Tomáš Kocsis
+        </a>
+
+        <label class="navbar-toggler" for="toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
+
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="nav-link" href="#sluzby">SLUŽBY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">O NÁS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#kontakt">KONTAKT</a>
+            </li>
+        </ul>
+
+    </nav>
+ 
+ 
+<main>
+    <section>
+        <div class="firsts">
+            <h1>ZVÁRAČSKÉ PRÁCE a kovovýroba</h1>
+            <p class="firstp">Brány, kovové palety, regále a mnoho inéheho, Nase produkty su vyrobené na miery presna podla Vasich predstáv. Pre viac informácii nás neváhajte kontaktovat.</p>
+            <h2>O našej spoločnosti</h2>  
+            <p class="firstp">Naša spoločnosť Vám ponúka kvalitné zámočnícke a zváračské služby. Veľký dôraz dávame na kvalitu našich služieb a v neposlednom rade na dodržiavanie dohodnutých termínov. V prípade záujmu nás neváhajte kontaktovať.</p>
+
+        </div>
+    </section>
+    <h2 class="sluzby" id="sluzby">SLUŽBY</h2>
+<section class="section2">
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/Brány.png" alt="brana">
+    <h3>Kovové brány</h3>
+    <p class="itemp">Vyrobíme Vám na mieru okrasné brány pre Váš dom alebo jednoduché priemyselné brány. Vďaka širokej ponuke dizajnov vieme ponúknuť riešenie presne podľa vašich predstáv. </p>
+</div>
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/fence.jpg" alt="plot">
+    <h3>Ploty</h3>
+    <p class="itemp">Každý dom alebo priemyselná budova potrebuje oplotenie. Či už kvôli ohraničeniu pozemku alebo zvýšeniu bezpečnosti. Naše výrobky ponúkajú okrem týchto výhod aj vinikajúci dizajn, ktorý spraví vaše objekty ešte lukratívnejšie.</p>
+</div>
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/table.png" alt="stol">
+    <h3>Lavičky, stoličky a stoly</h3>
+    <p class="itemp">Naša spoločnosť sa venuje aj výrobe stolov, stoličiek alebo lavičiek. Potrebujete vybavenie pre Vašu záhradu alebo priemyselné budovy a firmy? Vieme Vám poskytnúť riešenia podľa vašich predstáv.</p>
+</div>
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/patka.jpg" alt="petka">
+    <h3>Stojany a držiaky</h3>
+    <p class="itemp">Či už potrebujete jednoduchý stojan alebo držiaky na rôzne billboardy alebo iné materiály, naša spoločnosť Vám poskytne riešenia priamo podľa vašich požiadaviek. Samozrejmosťou je aj vysoká pevnosť a estetickosť našich výrobkov.</p>
+</div>
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/regal.jpg" alt="regal">
+    <h3>Kovové regále</h3>
+    <p class="itemp">Archívy, rôzne výrobné podniky alebo kancelárie potrebujú uskladňovať svoje výrobky a a dokumentácie na kvalitných kovových regáloch. Dôraz sa kladie hlavne na zvýšenú nosnosť a kvalitu regálov.</p>
+</div>
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/permetező.jpg" alt="postrikac">
+    <h3>Oprava poľnohospodárskych strojov</h3>
+    <p class="itemp">Archívy, rôzne výrobné podniky alebo kancelárie potrebujú uskladňovať svoje výrobky a a dokumentácie na kvalitných kovových regáloch. Dôraz sa kladie hlavne na zvýšenú nosnosť a kvalitu regálov.</p>
+</div>
+
+<div class="itemcontainer">
+    <img class="itemfoto" src="./img/rury.jpg" alt="rury">
+    <h3>Ostatné výrobky</h3>
+    <p class="itemp">Každý dom alebo priemyselná budova potrebuje oplotenie. Či už kvôli ohraničeniu pozemku alebo zvýšeniu bezpečnosti. Naše výrobky ponúkajú okrem týchto výhod aj vinikajúci dizajn, ktorý spraví vaše objekty ešte lukratívnejšie.</p>
+</div>
+
+</section>
+<h2 class="kontakt_nas">Kontaktujte nás</h2>
+<form class="form" action="https://formspree.io/f/xdojnarg" method="post" id="kontakt">
+    <div class="fotarolo">
+       <div class="tarolo">
+           
+           <input type="text" name="Name" id="name-id" placeholder="Vaše Meno (Povinné)"> 
+       </div>
+       <div class="tarolo">
+          
+           <input type="email" name="email" id="email-id" placeholder="Váš email (povinné)">
+       </div>
+       <div class="tarolo">
+          
+        <input type="tel" name="email" id="tel-id" placeholder="Telefónne číslo (povinné)">
+    </div>
+    <div class="tarolo">
+          
+        <input type="text" name="email" id="pred-id" placeholder="Predmet (povinné) ">
+    </div>
+       <div class="tarolo">
+           
+           <textarea name="message" id="message-id" cols="30" rows="10" placeholder="Správa"></textarea>
+           
+       </div>
+       <div>
+           <input class="submit" type="submit" value="Odošli">
+       </div>
+   </div>
+ </form>
+
+</main>
+<footer>
+    
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2644.382372788369!2d22.13777370750904!3d48.48755936652241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4738e0696204bd39%3A0xfe446dfd49e0e9af!2sPtruk%C5%A1a%2018%2C%20076%2077%20Ptruk%C5%A1a!5e0!3m2!1ssk!2ssk!4v1669477587894!5m2!1ssk!2ssk"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <div class="elerhetoseg">
+        <p>Tomas Kocsis</p>
+        <p>Ptruksa 18</p>
+        <p>+421904425898</p>
+        <p>email: tomaskocsis6@gmail.com</p>
+    </div>
+   
+
+</footer>
+</body>
+</html>
