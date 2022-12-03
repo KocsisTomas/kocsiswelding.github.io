@@ -282,7 +282,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     
-    background-color: rgb(204,197,185);
+    background-color: #ccc5b9;
     padding-top: 20px;
 }
 
@@ -319,5 +319,13 @@ footer{
     width: auto;
     align-content: flex-end;
 }
+.fotarolo{
+    width: 80%;
+    
 
+}
+form{
+    display: flex;
+    justify-content: center;
+}
 }
