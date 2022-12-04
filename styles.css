@@ -23,6 +23,8 @@ body{
 .firstp{
     color: whitesmoke;
     margin: 30px;
+    font-size: 20px;
+    word-spacing: 3px;
 }
 
 nav {
@@ -70,6 +72,7 @@ h1, h2{
     text-transform: uppercase;
     text-align: center;
     padding: 50px;  
+    font-size: 30px;
 }
 .sluzby{
     color: black;
@@ -80,75 +83,15 @@ h3{
     padding: 10px;
 }
 .section2{
-    background-color:rgb(204,197,185);
+    background-color:rgb(204,197,185);  
+}
+
     
-    
-}
-.itemcontainer{
-    display: flex;
-    margin: 10px;
-    background-color:rgb(245, 245, 245);
-    box-shadow: 3px 3px 7px rgb(64, 64, 82);
-    min-height: 400px;
-
+i{
+    padding: 8px;
 }
 
 
-@media (max-width: 767px) {
-
-    nav .nav-list {
-        display: grid;
-        position: absolute;
-        background: #404040;
-        width: 100%;
-        top: 75px;
-        left: 0;
-        transform: translateY(-100%);
-        z-index: -1;
-        transition: .6s;
-        
-    }
-    .nav-link{
-        display: flex;
-    }
-
-    nav .nav-list .nav-item {
-        padding-left: 35px;
-    }
-
-    nav .navbar-toggler.navbar-toggler {
-        display: grid 
-    }
-
-    .itemcontainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: auto;
-        text-align: center;
-        border: solid 1px black;
-        border-radius: 2%;
-
-    }
-    .itemfoto{
-        width: 30%;
-        min-width: 150px;
-        align-self: center;
-        padding: 10px 0 10px 0 ;
-    }
-    .itemp{
-        padding: 20px;
-    }
-}
-
-@media screen and (min-width: 768px) {
-
-.itemfoto{
-    width: 300px;
-    
-
-
-}
 .itemcontainer{
     flex-direction: column;
     align-items: center;
@@ -157,23 +100,29 @@ h3{
     border: solid 1px black;
     border-radius: 2%;
     box-shadow: 3px 3px 7px rgb(64, 64, 82);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 1px black;      
+    margin: 10px;
+    background-color:rgb(245, 245, 245);
+    min-height: 400px;
 }
 .itemfoto{
-    width: 30%;
+    width: 40%;
     min-width: 150px;
     align-self: center;
     padding: 10px 0 10px 0 ;
+}
+.section2{
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .itemp{
     padding: 20px;
 }
 
 
-
-
-
-}
 nav .navbar-toggler {
     display: none;
     height: min-content;
@@ -222,17 +171,23 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 .kontakt{
     background-color:rgb(245, 245, 245);
 }
+form{
+    display: flex;
+    justify-content: center;
+}
 .fotarolo {
     background-color: rgb(245, 245, 245);
     border: solid 1px;
     padding: 10px;
-    width: auto;
+    width: 90%;
     margin: 10px 10px 0px 10px;
     box-shadow: 3px 3px 7px rgb(64, 64, 82);
     border-radius: 5px;
     
 }
- 
+ .fotarolo:first-child{
+    padding-top: 30px;
+ }
 
 #name-id, #email-id, #tel-id, #pred-id {
     width: 70%;
@@ -281,7 +236,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
 footer{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
     background-color: #ccc5b9;
     padding-top: 20px;
 }
@@ -305,11 +260,59 @@ footer{
 padding: 25px;
 }
 
+@media (max-width: 767px) {
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #404040;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+        
+    }
+    .nav-link{
+        display: flex;
+    }
+
+    nav .nav-list .nav-item {
+        padding-left: 35px;
+    }
+
+    nav .navbar-toggler.navbar-toggler {
+        display: grid 
+    }
+
+    .section2{
+        display: grid;
+        grid-template-columns:  auto;
+    }
+        
+        .itemcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+        text-align: center;
+        border: solid 1px black;
+        border-radius: 2%;
+
+    }
+  .itemfoto{
+    width: 40%;
+  }
+
+}
+
+
 @media screen and (min-width: 999px) {
 
 .section2{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
 }
 footer{
     justify-content: space-around;
@@ -327,5 +330,9 @@ footer{
 form{
     display: flex;
     justify-content: center;
+}
+.itemfoto{
+    width: 40%;
+        
 }
 }
