@@ -30,8 +30,8 @@ body{
 nav {
     display: flex;
     justify-content: space-between;
-    line-height: 74px;
-    height: 75px;
+    line-height: 76px;
+    height: 76px;
     text-transform: uppercase;
     background: rgb(64,61,57);
     
@@ -102,7 +102,7 @@ i{
     box-shadow: 3px 3px 7px rgb(64, 64, 82);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     border: solid 1px black;      
     margin: 10px;
     background-color:rgb(245, 245, 245);
@@ -112,7 +112,11 @@ i{
     width: 40%;
     min-width: 150px;
     align-self: center;
-    padding: 10px 0 10px 0 ;
+   
+    padding: 20px 10px;
+    min-width: 300px;
+    min-height: 300px;
+    max-height: 450px;
 }
 .section2{
     display: grid;
@@ -294,16 +298,14 @@ padding: 25px;
         .itemcontainer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         width: auto;
         text-align: center;
         border: solid 1px black;
         border-radius: 2%;
 
     }
-  .itemfoto{
-    width: 40%;
-  }
+  
 
 }
 
@@ -332,7 +334,13 @@ form{
     justify-content: center;
 }
 .itemfoto{
-    width: 40%;
+    padding: 20px 10px;
+   min-width: 300px;
+   min-height: 300px;
+   max-height: 450px;
         
+}
+.itemcontainer{
+    justify-content: flex-start;
 }
 }

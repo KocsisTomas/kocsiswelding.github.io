@@ -7,3 +7,8 @@ function trimTextFieldCallback( event ) {
 
 document.querySelectorAll('.js_text')
       .forEach(text => text.addEventListener('blur', trimTextFieldCallback));
+
+
+document.querySelector('.js-navlist').addEventListener("click", () => {
+    document.querySelector('.js-checkbox').checked = false;
+})
