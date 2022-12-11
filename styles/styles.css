@@ -395,7 +395,9 @@ i{
         border-radius: 2%;
 
     }
-  
+    #name-id, #email-id, #tel-id, #pred-id, #message-id {
+    width: 90%;
+    }
 
 }
 
