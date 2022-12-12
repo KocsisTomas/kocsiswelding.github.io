@@ -311,7 +311,7 @@ form{
    
 }
 
-footer{
+.footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -344,6 +344,13 @@ i{
     text-shadow: none;
 }
 
+.copy{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(167, 161, 154);
+}
+
 @media (max-width: 767px) {
 
     nav .nav-list {
@@ -371,7 +378,8 @@ i{
     }
 
     .firstp{
-        margin: 30px 40px;
+        margin: 30px 20px;
+        font-size: 19px;
     }
     .onas{
         padding: 10px 40px 0 40px;
@@ -414,7 +422,7 @@ i{
     grid-column-start: 1;
     grid-column-end: 4;              
 }  
-footer{
+.footer{
     justify-content: space-around;
 }
 .elerhetoseg{
@@ -440,4 +448,5 @@ form{
 .itemcontainer{
     justify-content: flex-start;
 }
+
 }
