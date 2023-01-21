@@ -17,7 +17,7 @@ body{
 
     background-image: url(../img/backgraund2_optimized.png);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: right;
     min-height: 600px;
     text-shadow: 0 5px 5px black;
@@ -26,7 +26,8 @@ body{
     
 }
 .shadow{
-    background-color: rgba(0, 0, 0, 0.3);
+    
+    background-color: rgba(0, 0, 0, 0.6);
     min-height: 600px;
 }
 
@@ -37,18 +38,13 @@ body{
     text-shadow: black 3px 3px 10px ;
     font-size: 20px;
     word-spacing: 3px;   
-    padding-bottom: 10px;
-   
-    text-align: center;
-    padding: 20px;
-
-  
+    padding-bottom: 10px;       
+    padding: 20px; 
 
 }
 .section2{
     display: flex;
-   flex-direction: column;
-   
+    flex-direction: column;   
     background-color:rgb(167, 161, 154) ;    
     padding-top: 30px;
 }
@@ -58,7 +54,7 @@ body{
     font-size: 20px;
     word-spacing: 3px;
     padding: 10px 100px 0 100px;
-    text-align: center;
+    
     
 }
 .kontaktb{
@@ -68,8 +64,7 @@ body{
    margin: 50px auto ;
    color: black;
    text-align: center;
-   background-color: rgba(203, 203, 207, 0.733);
-  
+   background-color: rgba(203, 203, 207, 0.733);  
    box-shadow:5px 5px 5px rgb(64, 64, 82);
    border-radius: 5px;
    display: block;
@@ -150,19 +145,19 @@ h3{
     flex-direction: column;
     justify-content: flex-start;
     border: solid 1px black;      
-    margin: 10px;
+    margin: 20px;
     background-color:rgb(245, 245, 245);
     min-height: 400px;
 }
 .itemfoto{
-    width: 40%;
-    min-width: 150px;
-    align-self: center;
-   
+    width: 40%;   
+    align-self: center;   
     padding: 20px 10px;
     min-width: 300px;
     min-height: 300px;
     max-height: 450px;
+    object-fit: cover;
+    height: auto;
 }
 
 .itemp{
@@ -385,7 +380,7 @@ i{
         padding: 10px 40px 0 40px;
     }
     .section3{
-        padding: 15px;
+        padding: 25px;
         display: grid;
         grid-template-columns:  auto;
     }
@@ -416,12 +411,9 @@ i{
     }
 .section3{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
 }
-.sluzby{    
-    grid-column-start: 1;
-    grid-column-end: 4;              
-}  
+ 
 .footer{
     justify-content: space-around;
 }
@@ -438,13 +430,7 @@ form{
     display: flex;
     justify-content: center;
 }
-.itemfoto{
-    padding: 20px 10px;
-   min-width: 300px;
-   min-height: 300px;
-   max-height: 450px;
-        
-}
+
 .itemcontainer{
     justify-content: flex-start;
 }
