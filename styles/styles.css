@@ -11,26 +11,20 @@
 body{
     background-color:rgb(204,197,185);
     position: absolute;
-
 }
 .firsts{
-
     background-image: url(../img/backgraund2_optimized.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
     min-height: 600px;
     text-shadow: 0 5px 5px black;
-    margin-top: 74px;
-   
-    
+    margin-top: 74px;    
 }
-.shadow{
-    
+.shadow{    
     background-color: rgba(0, 0, 0, 0.6);
     min-height: 600px;
 }
-
 
 .firstp{
     color: lightgray;
@@ -49,17 +43,12 @@ body{
     padding-top: 30px;
 }
 
-.onas{
-   
+.onas{   
     font-size: 20px;
     word-spacing: 3px;
-    padding: 10px 100px 0 100px;
-    
-    
+    padding: 10px 100px 0 100px;    
 }
 .kontaktb{
-   
-
    padding: 10px 30px;
    margin: 50px auto ;
    color: black;
@@ -81,18 +70,14 @@ nav {
     height: 74px;
     text-transform: uppercase;
     background: rgb(64,61,57);
-    z-index: 1;
-    
+    z-index: 1;    
 }
 
-nav .navbar-brand {
-    
-    color: rgb(235, 233, 233);
-   
+nav .navbar-brand {    
+    color: rgb(235, 233, 233);   
     padding-left: 20px;
     letter-spacing: .5px;
     align-items: center;
-
 }
 
 nav .nav-list {
@@ -101,8 +86,7 @@ nav .nav-list {
 
 nav .nav-list .nav-item {
     cursor: pointer;
-    height: 100%;
-    
+    height: 100%;    
     transition: .4s;
 }
 
@@ -115,8 +99,7 @@ nav .nav-list .nav-link {
     font-size: 18px;
     display: block;
     width: 100%;
-    padding: 0px 20px ;
-    
+    padding: 0px 20px ;    
 }
 
 h1{
@@ -131,7 +114,6 @@ h1{
 h3{
     padding: 10px;
 }
-
 
 .itemcontainer{
     flex-direction: column;
@@ -149,6 +131,7 @@ h3{
     background-color:rgb(245, 245, 245);
     min-height: 400px;
 }
+
 .itemfoto{
     width: 40%;   
     align-self: center;   
@@ -169,28 +152,21 @@ h3{
     display: grid;    
     grid-template-columns: auto auto;
     background-color:rgb(204,197,185);
-    padding: 30px;
-    
+    padding: 30px;    
 }
 
 .sluzby, .kontakt_nas, .onash2{
     
     grid-column-start: 1;
-    grid-column-end: 3;
-    
+    grid-column-end: 3;    
     padding: 40px;
     color: black;
-    text-shadow: none;
-    
-   
+    text-shadow: none;       
     text-transform: uppercase;
     text-align: center;
     padding: 50px;  
     font-size: 30px;
 }
-
-
-
 
 nav .navbar-toggler {
     display: none;
@@ -214,9 +190,7 @@ input {
 
 input:checked ~ nav .nav-list {
     transform: translateY(0);
-    z-index: 1;
-    
-    
+    z-index: 1;    
 }
 
 input:checked ~ nav .navbar-toggler {
@@ -252,10 +226,9 @@ form{
     margin: 10px 10px 0px 10px;
     box-shadow: 3px 3px 7px rgb(64, 64, 82);
     border-radius: 10px;
-    margin-bottom: 40px;
-    
-    
+    margin-bottom: 40px;    
 }
+
  .fotarolo:first-child{
     padding-top: 30px;
  }
@@ -270,11 +243,9 @@ form{
     box-shadow: 3px 3px 3px  rgb(143, 143, 156);
     text-shadow: none;
     height: 30px;
-    border-radius: 5px;
-
-    
-    
+    border-radius: 5px;       
   }
+
   #message-id {
     width: 70%;
     padding: 5px 20px;
@@ -285,11 +256,7 @@ form{
     text-shadow: none;
     border: solid 1px;
     border-radius: 5px;
-  }
-
-    
-    
-    
+  }      
 
  .submit {
    width: 80%;
@@ -302,8 +269,7 @@ form{
    display: block;
    max-width: 200px;
    min-width: 100px;
-   cursor: pointer;
-   
+   cursor: pointer;   
 }
 
 .footer{
@@ -319,8 +285,9 @@ form{
     justify-content: center;
     padding: 15px;
     height: 300px;
-    width: auto;
+    width: auto;    
 }
+
 .elerhetoseg{
     display: flex;
     justify-content: center;
@@ -396,19 +363,19 @@ i{
         text-align: center;
         border: solid 1px black;
         border-radius: 2%;
-
     }
+
     #name-id, #email-id, #tel-id, #pred-id,#message-id {
     width: 90%;
     }
-
 }
 
-
 @media screen and (min-width: 999px) {
+
     .firstp{
         margin: 30px 100px;
     }
+
 .section3{
     display: grid;
     grid-template-columns: auto auto;
@@ -417,15 +384,17 @@ i{
 .footer{
     justify-content: space-around;
 }
+
 .elerhetoseg{
     justify-content: center;
     width: auto;
     align-content: flex-end;
 }
+
 .fotarolo{
-    width: 80%;
-    
+    width: 80%;    
 }
+
 form{
     display: flex;
     justify-content: center;
@@ -434,5 +403,4 @@ form{
 .itemcontainer{
     justify-content: flex-start;
 }
-
 }
