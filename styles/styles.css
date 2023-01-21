@@ -27,14 +27,12 @@ body{
 }
 
 .firstp{
-    color: lightgray;
-    margin: 30px 60px;
+    color: lightgray;    
     text-shadow: black 3px 3px 10px ;
     font-size: 20px;
-    word-spacing: 3px;   
-    padding-bottom: 10px;       
-    padding: 20px; 
-
+    word-spacing: 3px;              
+    padding: 10px 40px 0 40px;     
+    line-height: 25px;
 }
 .section2{
     display: flex;
@@ -46,7 +44,8 @@ body{
 .onas{   
     font-size: 20px;
     word-spacing: 3px;
-    padding: 10px 100px 0 100px;    
+    padding: 10px 100px 0 100px;  
+    line-height: 25px;  
 }
 .kontaktb{
    padding: 10px 30px;
@@ -138,7 +137,7 @@ h3{
     padding: 20px 10px;
     min-width: 300px;
     min-height: 300px;
-    max-height: 450px;
+    max-height: 300px;
     object-fit: cover;
     height: auto;
 }
@@ -146,6 +145,7 @@ h3{
 .itemp{
     padding: 20px;
     text-align: left;
+    line-height: 20px;
 }
 
 .section3{
@@ -155,8 +155,7 @@ h3{
     padding: 30px;    
 }
 
-.sluzby, .kontakt_nas, .onash2{
-    
+.sluzby, .kontakt_nas, .onash2{    
     grid-column-start: 1;
     grid-column-end: 3;    
     padding: 40px;
@@ -338,11 +337,7 @@ i{
     nav .navbar-toggler.navbar-toggler {
         display: grid; 
     }
-
-    .firstp{
-        margin: 30px 20px;
-        font-size: 19px;
-    }
+    
     .onas{
         padding: 10px 40px 0 40px;
     }
